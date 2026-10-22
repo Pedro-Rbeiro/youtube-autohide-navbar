@@ -1,0 +1,22 @@
+/* Remove o espaço reservado para o header */
+ytd-app {
+  --ytd-masthead-height: 0px !important;
+}
+
+ytd-page-manager {
+  margin-top: 0 !important;
+}
+
+/* Header escondido, deixando uma faixa de 6px para detectar o mouse */
+#masthead-container.ytd-app {
+  transform: translateY(calc(-100% + 6px)) !important;
+  transition: transform 0.2s ease 0.25s !important; /* pequeno atraso ao esconder */
+  z-index: 2300 !important;
+}
+
+/* Aparece ao passar o mouse ou enquanto a busca está em foco */
+#masthead-container.ytd-app:hover,
+#masthead-container.ytd-app:focus-within {
+  transform: translateY(0) !important;
+  transition-delay: 0s !important;
+}
