@@ -10,8 +10,9 @@ ytd-page-manager {
 /* Header escondido, deixando uma faixa de 6px para detectar o mouse */
 #masthead-container.ytd-app {
   transform: translateY(calc(-100% + 6px)) !important;
-  transition: transform 0.2s ease 0.25s !important; /* pequeno atraso ao esconder */
+  transition: transform 0.25s ease 0.25s, opacity 0.25s ease 0.25s !important;
   z-index: 2300 !important;
+  opacity: 0.2 !important;
 }
 
 /* Aparece ao passar o mouse ou enquanto a busca está em foco */
@@ -19,4 +20,5 @@ ytd-page-manager {
 #masthead-container.ytd-app:focus-within {
   transform: translateY(0) !important;
   transition-delay: 0s !important;
+  opacity: 1 !important;
 }

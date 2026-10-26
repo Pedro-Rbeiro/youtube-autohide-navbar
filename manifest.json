@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "YouTube Auto-hide Navbar",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Esconde a barra de navegação do YouTube e mostra ao passar o mouse no topo da tela.",
   "browser_specific_settings": {
     "gecko": {
